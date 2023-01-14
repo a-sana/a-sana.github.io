@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>City Planning Portfolio</title>
+        <link rel="stylesheet" href="css/style.css">
+      
+    </head>
+   
+<body>
+    <div class="full-img" id="fullImgBox">
+        <img src="images/img1.jpg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+      
+        <img src="images/s1.png" onclick="openFullImg(this.src)">
+        <img src="images/s2.png" onclick="openFullImg(this.src)">
+        <img src="images/s3.png" onclick="openFullImg(this.src)">
+        <img src="images/s4.png" onclick="openFullImg(this.src)">
+        <img src="images/s5.png" onclick="openFullImg(this.src)">
+        <img src="images/s6.png" onclick="openFullImg(this.src)">
+       
+    </div>
+<script>
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+
+    function openFullImg(pic){
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+    }
+
+    function closeFullImg(){
+        fullImgBox.style.display = "none";
+    }
+</script>
+</body>
+</html>

@@ -51,4 +51,9 @@ h1{
     padding-top: 10px;
     text-align: center;
    
-   }
+}
+.fyi {
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}

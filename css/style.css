@@ -1,59 +1,108 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: PT Mono;
-    text-align: left;
+    font-family: 'Nanum Pen Script', sans-serif;
+    box-sizing: border-box;
+
 }
 body{
-    background: #f5d0c5;
+    /* 19, 60, 85 */
+    background: rgb(212, 194, 252);
+    color: rgb(19, 60, 85);
 }
-.img-gallery{
-    width: 80%;
-    margin: 100px auto 50px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 30px;
-}
-.img-gallery img{
-    width: 100%;
-    cursor: pointer;
-}
-.img-gallery img:hover{
-    transform: scale(0.8) rotate(-3deg);
-    border-radius: 20px;
-    box-shadow: 0 32px 75px rgba(68,77,136,0.2);
-}
-.full-img{
+#header{
     width: 100%;
     height: 100vh;
-    background: rgba(0,0,0,0.9);
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: none;
+    background-image: url(images/logo-color.png);
+    background-size: cover;
+    background-position: center;
+
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
     align-items: center;
-    justify-content: center;
-    z-index: 100;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.full-img img{
-    width: 90%;
-    max-width: 500px;
+
+.logo{
+    width: 150px;
 }
-.full-img span{
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: rgb(19, 60, 85);
+    text-decoration: none;
+    font-size: 24px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #f7f0f0;
     position: absolute;
-    top: 5%;
-    right: 5%;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+
+.header-text{
+    margin-top: 20%;
     font-size: 30px;
-    color: #fff;
-    cursor: pointer;
 }
-h1{  
-    padding-top: 10px;
-    text-align: center;
-   
+
+.header-text h1{
+    font-size: 30px;
+    margin-top: 20%;
 }
-.fyi {
-    text-align: center;
-    padding-top: 0px;
-    padding-bottom: 0px;
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span{
+    color: #ff004f;
+}
+
+/* about */
+#about{
+    padding: 80px 0;
+    color: rgb(19, 60, 85);
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: rgb(19, 60, 85);
 }

@@ -273,6 +273,9 @@ nav ul li a:hover::after{
 } */
 
 /* --------css for small screens------ */
+nav .fas{
+    display: none;
+}
 
 @media only screen and (max-width: 600px) {
     #header{
@@ -286,6 +289,33 @@ nav ul li a:hover::after{
     }
     .header-text h1{
         font-size: 30px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
     }
 
 }

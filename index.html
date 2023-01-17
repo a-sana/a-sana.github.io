@@ -24,14 +24,14 @@
       <div class="container">
         <nav>
           <img src="images/sana-low-resolution-logo-color-on-transparent-background (2).png" class="logo">
-          <ul>
+          <ul id="sidemenu">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Experience</a></li>
-            <li><a href="#">Selected Projects</a></li>
-            <li><a href="#">Portfolio</a></li>
-            
+            <li><a href="#">Professional Experience</a></li>
+            <li><a href="#">Planning Portfolio</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
           </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
       
@@ -323,6 +323,18 @@ page reports tailored to each conference co-hosting partner, summarizing finding
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
       }
     </script>
 

@@ -25,7 +25,9 @@ body{
     cursor: pointer;
 }
 .img-gallery img:hover{
-    transform: scale(0.8) rotate(-3deg);
+    transform: scale(0.9) translateY(-10px); 
+    /* transform: scale(0.8) translateY(-10px); */
+    /* transform: scale(0.8) rotate(-3deg); */
     border-radius: 20px;
     box-shadow: 0 32px 75px rgba(68,77,136,0.2);
 }
@@ -166,7 +168,7 @@ input:checked ~ nav .navbar-toggler{
 
 input:checked ~ nav .navbar-toggler .bar:nth-child(1){
     position: absolute;
-    transform: rotate(45deg);
+    transform: rotate(45deg); 
 }
 
 input:checked ~ nav .navbar-toggler .bar:nth-child(2){

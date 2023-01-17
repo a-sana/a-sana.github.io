@@ -5,6 +5,9 @@
     box-sizing: border-box;
 
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     /* 19, 60, 85 */
     background: rgb(212, 194, 252);

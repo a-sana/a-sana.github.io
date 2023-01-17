@@ -10,6 +10,7 @@
 }
 
 body{
+    /* #f5d0c5 212, 194, 252 */
     background: #f5d0c5;
 }
 .img-gallery{
@@ -73,6 +74,7 @@ nav{
     padding: 0 15%;
     height: 75px;
     line-height: 75px;
+
     background: rgb(212, 194, 252);
 }
 

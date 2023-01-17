@@ -291,11 +291,11 @@ nav .fas{
 
     }
     .header-text h1{
-        font-size: 30px;
+        font-size: 50px;
     }
     nav .fas{
         display: block;
-        font-size: 25px;
+        font-size: 35px;
     }
     nav ul{
         background: #d7bce8;
@@ -322,7 +322,7 @@ nav .fas{
     }
 
     .sub-title{
-        font-size: 40px;
+        font-size: 60px;
     }
 
     .about-col-1, about-col-2{
@@ -334,11 +334,11 @@ nav .fas{
     }
 
     .about-col-2{
-        font-size: 18px;
+        font-size: 30px;
     }
 
     .tab-links{
-        font-size: 16px;
+        font-size: 30px;
         margin-right: 20px;
     }
 

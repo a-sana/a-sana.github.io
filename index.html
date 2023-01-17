@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shrikhand">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 
   </head>
   <body>
@@ -26,8 +27,9 @@
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Experience</a></li>
-            <li><a href="#">Portfolio</a></li>
             <li><a href="#">Selected Projects</a></li>
+            <li><a href="#">Portfolio</a></li>
+            
           </ul>
         </nav>
         <div class="header-text">
@@ -46,11 +48,120 @@
           </div>
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
-            <p>Hellooooo.</p>
+            <p>Hellooooo. <i class="fa-brands fa-linkedin"></i>
+
+              <br>
+
+              <div class="tab-titles">
+                
+                <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('projects')">Selected Projects</p>
+              </div>
+              <div class="tab-contents active-tab" id="education">
+                <ul>
+                  <span style="font-size: 18px">
+                  <li><em><strong>University of Pennsylvania</em></strong>:&ensp; Master of Computer and Information Technology</li>
+                  <li><em><strong>University of California, Berkeley</em></strong>:&ensp;Bachelor of Arts, Urban Studies </li>
+                  
+                </span>
+                  <!-- <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
+                  <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
+                  <li><span>UI?UX</span><br>Designing Web/App Interfaces</li> -->
+                </ul>
+              </div>
+              <div class="tab-contents" id="skills">
+                <ul>
+                  <span style="font-size: 18px">
+                  <li><em><strong>Languages</em></strong>:&ensp;Python, Java, C, HTML, CSS, C++ </li>
+                  <li><em><strong>Tools & Frameworks</em></strong>:&ensp;JUnit, Git, Jupyter Notebook, Docker </li>
+                  <li><em><strong>Other</em></strong>:&ensp;Geographic Information Systems (ArcGIS, QGIS), Adobe InDesign, Adobe Illustrator, Microsoft Office Suite, SurveyMonkey </li>
+                </span>
+                  <!-- <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
+                  <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
+                  <li><span>UI?UX</span><br>Designing Web/App Interfaces</li> -->
+                </ul>
+                </div>
+             
+                  <div class="tab-contents" id="projects">
+                    <ul>
+                      <span style="font-size: 18px">
+
+                        <strong>Sudoku Solver</strong> <br>
+        <em>Technologies: Python</em> <br>
+        &#x2022; Programmed different inference algorithms in Python to solve easy, medium, and hard Sudoku problems <br>
+        &#x2022; Based design on the AC-3 algorithm for solving constraint satisfaction problems <br><br>
+
+        <strong>City of Philadelphia COVID Data Analysis</strong> <br>
+        <em>Technologies: Java, JSON, JUnit</em> <br>
+        &#x2022; Utilized n-tier architecture to read, parse, and process data and implement the user interface <br>
+        &#x2022; Employed the Singleton pattern to log user activity; the Strategy pattern to generalize an algorithm that could be customized
+        by features that are similar; and memoization for efficient method calls <br> <br>
+
+        <strong>Reverse Assembler</strong> <br>
+        <em>Technologies: C, Valgrind, GDB</em> <br>
+        &#x2022; Created a program to open, read, and parse an object file created by PennSim, an interface for executing LC-4 programs on a
+        simulated LC-4 machine <br>
+        &#x2022; Loaded the object file's contents into a LinkedList to represent the LC4's program and data memories <br>
+        &#x2022; Converted the object file back to assembly <br><br>
+
+        <strong>Battleship Game</strong> <br>
+        <em>Technologies: Java, JUnit</em> <br>
+        &#x2022; Designed a single-player version of the game Battleship utilizing abstract and derived classes <br><br>
+
+      
+                    </div>
+                    
+                        <!-- <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>UI?UX</span><br>Designing Web/App Interfaces</li> -->
+                      
+           
           </div>
         </div>
       </div>
     </div>
+    <!-- -------------------services ------------------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">Services</h1>
+        <div class="services-list">
+          <div>
+            <h2>Web Design</h2>
+            <p>boiler plate.</p>
+            <a href="#">learn more</a>"
+          </div>
+          <div>
+            <h2>Web Design</h2>
+            <p>boiler plate.</p>
+            <a href="#">learn more</a>"
+          </div>
+
+          <div>
+            <h2>Web Design</h2>
+            <p>boiler plate.</p>
+            <a href="#">learn more</a>"
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
 
   </body>
 </html>

@@ -1,0 +1,365 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>Sana's Personal Website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Urbanist">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hanken+Grotesk">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Red+Hat+Display">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Mono">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shrikhand">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/ceb5245a20.js" crossorigin="anonymous"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/sana-low-resolution-logo-color-on-transparent-background (2).png" class="logo">
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#about">Projects</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+      
+          <h1><center>Hi! I'm Sana.</center> </h1>
+          <span style="font-size: 40px">
+          <p><center>("<a href="https://www.youtube.com/watch?v=BZw4pguPiZw" target="_blank">s-uh-n-aa</a>")</center> </p>
+        </span>
+        </div>
+      </div>
+    </div>
+    <!-- *ABOUT ME -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/IMG_4660.JPG">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me </h1>
+            <span style="font-size: 20px">
+            <p>I am a public transit and active transportation (bike/walk) enthusiast. <br><br>
+              My background is in city planning (specifically transportation planning), but I went back to school to study computer science. I am most passionate about civic/government technology.<br><br>
+            
+            In my free time,  I enjoy experimenting in the kitchen. You can view some of my creations <a href="edible-creations.html" target="_blank">here</a>.<br><br>
+
+            Feel free to connect with me on LinkedIn! <a href="https://www.linkedin.com/in/-sana-ahmed" target="_blank"><i class="fa-brands fa-linkedin"></i></a><br><br>
+
+            (I took the photo on the left/above inside a hot air balloon in Cappadocia, Turkey.)
+            
+            
+              <br><br>
+            </span>
+
+              <div class="tab-titles">
+                
+                
+                <p class="tab-links active-link" onclick="opentab('education')"><strong>Education</strong></p>
+                <p class="tab-links" onclick="opentab('skills')"><strong>Skills</strong></p>
+                <p class="tab-links" onclick="opentab('projects')"><strong>Selected Projects</strong></p>
+              </div>
+              <div class="tab-contents active-tab" id="education">
+                <ul>
+                  <span style="font-size: 20px">
+                  <li><em>University of Pennsylvania</em>:&ensp; Master of Computer and Information Technology</li>
+                  <li><em>University of California, Berkeley</em>:&ensp;Bachelor of Arts, Urban Studies </li>
+                  
+                </span>
+                  <!-- <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
+                  <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
+                  <li><span>UI?UX</span><br>Designing Web/App Interfaces</li> -->
+                </ul>
+              </div>
+              <div class="tab-contents" id="skills">
+                <ul>
+                  <span style="font-size: 20px">
+                  <li><em><strong>Languages</em></strong>:&ensp;Python, Java, C, HTML, CSS, C++ </li>
+                  <li><em><strong>Tools & Frameworks</em></strong>:&ensp;JUnit, Git, Jupyter Notebook, Docker </li>
+                  <li><em><strong>Other</em></strong>:&ensp;Geographic Information Systems (ArcGIS, QGIS), Adobe InDesign, Adobe Illustrator, Microsoft Office Suite, SurveyMonkey, Squarespace, MailerLite, PonyExpress, GovDelivery</li>
+                </span>
+                  <!-- <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
+                  <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
+                  <li><span>UI?UX</span><br>Designing Web/App Interfaces</li> -->
+                </ul>
+                </div>
+             
+                  <div class="tab-contents" id="projects">
+                    <ul>
+                      <span style="font-size: 20px">
+
+                        <strong>Sudoku Solver</strong> <br>
+        <em>Technologies: Python</em> <br>
+        &#x2022; Programmed different inference algorithms in Python to solve easy, medium, and hard Sudoku problems <br>
+        &#x2022; Based design on the AC-3 algorithm for solving constraint satisfaction problems <br><br>
+
+        <strong>City of Philadelphia COVID Data Analysis</strong> <br>
+        <em>Technologies: Java, JSON, JUnit</em> <br>
+        &#x2022; Utilized n-tier architecture to read, parse, and process data and implement the user interface <br>
+        &#x2022; Employed the Singleton pattern to log user activity; the Strategy pattern to generalize an algorithm that could be customized
+        by features that are similar; and memoization for efficient method calls <br> <br>
+
+        <strong>Reverse Assembler</strong> <br>
+        <em>Technologies: C, Valgrind, GDB</em> <br>
+        &#x2022; Created a program to open, read, and parse an object file created by PennSim, an interface for executing LC-4 programs on a
+        simulated LC-4 machine <br>
+        &#x2022; Loaded the object file's contents into a LinkedList to represent the LC4's program and data memories <br>
+        &#x2022; Converted the object file back to assembly <br><br>
+
+        <strong>Battleship Game</strong> <br>
+        <em>Technologies: Java, JUnit</em> <br>
+        &#x2022; Designed a single-player version of the game Battleship utilizing abstract and derived classes <br><br>
+
+      
+                    </div>
+                    
+                        <!-- <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>UI?UX</span><br>Designing Web/App Interfaces</li> -->
+                      
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------------------Experience ------------------------->
+    <div id="experience">
+      <div class="container">
+        <h1 class="sub-title">Professional Experience</h1>
+        <div class="services-list">
+          <div>
+            <h2>ALTRANS <br> (Nov 2016-Current) </h2><br>
+            <span style="font-size: 20px">
+              
+      <strong><em>TDM/Bike Coordinator</strong></em><br>
+      Current Responsibilities: <br>
+      &#x2022; Responsible for management and coordination of the Palo Alto Transportation Management Association, a non-profit organization that provides transportation programs and services to help low-income, majority service workers, get to and from work in Palo Alto <br><br>
+      Previous Responsibilities: <br>
+      &#x2022; Managed programs and services to encourage sustainable commuting at Kaiser Permanente (KP) client sites (Oakland, Richmond, Alameda, Pinole, and San Leandro), with a population of over 10,000 employees combined; ensured compliance with local, state, and federal single occupancy vehicle (SOV) trip reduction requirements and clean air mandates <br>
+      &#x2022; Primary lead for identifying, testing, and implementing technology solutions to automate and streamline administrative processes <br>
+      &#x2022; Onboarded and trained two managers; developed documentation on standard operating procedures for each client site <br> 
+      &#x2022; Designed and conducted surveys across KP sites; synthesized survey data, program metrics data, and employee feedback for reporting</p>
+            
+          </span>
+          </div>
+          <div>
+            <h2>Seamless Bay Area (Nov 2021-May 2022)</h2> <br>
+            <span style="font-size: 20px">
+            <em><strong>Transportation Policy & Advocacy Intern </em> </strong><br>
+      &#x2022; Oversaw the SwissCal Conference on the Swiss Public Transportation System, a unique conference that brought together Swiss transit
+experts and California transportation policymakers <br>
+&#x2022; Coordinated conference logistics, published blog posts, and developed multiple 30+
+page reports tailored to each conference co-hosting partner, summarizing findings, discussions, and next steps for each respective transit region
+</span>  
+</div>
+
+          
+          <div>
+            <h2>Berkeley Planning Department <br> (Jan 2017-Feb 2018)</h2>
+            <span style="font-size: 20px">
+              <em><strong>Adeline Corridor Specific Plan/Policy Intern</em></strong> <br>
+              &#x2022; Part of a small team who oversaw the Adeline Corridor Special Plan Process <br>
+              &#x2022;  Conducted quantitative and qualitative research to help identify, record, and analyze issues along the
+              major multi-modal corridor, as well as find opportunities for improvement <br>
+              &#x2022; Coordinated with governmental agencies, staff, community groups, and the public to host meetings and
+              presentations on the progress of the project and to collect feedback <br>
+              &#x2022; Interpreted feedback and pertinent project data, presenting findings in reports and through visuals, mass-mailings, and by updating and maintaining the project website <br>
+              &#x2022;  Researched progressive policies and measures other jurisdictions have implemented to ensure equitable 
+              design and use of public space <br>
+              &#x2022; Developed charts, graphs, and other visuals for Policy Team to use in Planning Commission meeting reports <br>
+              &#x2022; Performed research to offer recommendations for revisions to the City's Zoning Ordinance
+              
+            
+          </span>
+          </div>
+
+          <div>
+            <h2>SF Public Works <br> (Oct 2014-Aug 2015)</h2>
+            <span style="font-size: 20px">
+              <strong><em>Student Design Trainee <br>(Curb Ramp Program)</strong> </em> <br>
+              &#x2022; Developed maps and reports on curb ramp statistics and priority projects for the Mayor's Office on Disability, Board of Supervisors,
+              and other City of San Francisco departments <br>
+              &#x2022; Addressed backlog of 75+ curb ramp locations that needed surveying; managed curb ramp database of nearly 50,000 records <br>
+              &#x2022; Tracked Notice of Intents for construction using Accela, a project management tool; informed lead engineers about potential overlaps
+              with other City projects <br>
+              &#x2022; Conducted field surveys of curb ramp priority locations, reporting field conditions to team engineers 
+              
+          </span>
+          </div>
+
+          <div>
+            <h2>SF Municipal Transportation Agency <br> (June 2013-Jan 2014)</h2>
+            <span style="font-size: 20px">
+              <em><strong>Student Design Trainee <br>(Bike Parking & Sharing Team)</em> </strong><br>
+              &#x2022; Managed San Francisco's bike parking database and fulfilled nearly 100 requests for new bicycle parking throughout the City <br>
+              &#x2022; Surveyed potential bike parking locations utilizing the bicycle parking clearance requirements to help determine potential capacity for new racks  <br>
+              &#x2022; Prepared internal legislative documents for bicycle corral proposals; environmental review packets for environmental clearance; and work order packets for rack installations 
+  
+          </span>
+          </div>
+
+          <div>
+            <h2>SF Municipal Transportation Agency <br> (June 2013-Aug 2013)</h2>
+            <span style="font-size: 20px">
+              <em><strong>Student Design Trainee <br>(Community Projects Team)</em> </strong><br>
+              &#x2022; Responsible for entire life cycle of two speed hump projects <br>
+              &#x2022; Ballotted residents at potential speed hump locations; determined potential barriers to implementation; prepared project documents for review and approval; and designed proposed speed humps in AutoCAD for work order submittals 
+              
+              
+          </span>
+          </div>
+
+          
+
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- -------------------portfolio ---------------------------->
+    <div id="portfolio">
+      <div class="container">
+
+        <h1 class="sub-title">City Planning Portfolio</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/swisscal.png">
+            <div class="layer">
+              <h3>SwissCal Conference on the Swiss Transportation Ecosystem</h3><br>
+              <p><span style="font-size: 20px">I helped with facilitating this unique conference. I produced three reports on key learnings, for our different conference partners; regularly updated and maintained the conference website; and authored blog posts on important takeaways from each of the main sessions. <br><br>
+                
+                <a href="https://scag.ca.gov/post/swisscal-conference-swiss-public-transportation-ecosystem" target="_blank">SCAG Report</a>, <a href="https://www.seamlessbayarea.org/blog/2022/2/21/one-journey-one-ticket-summary-of-day-1-of-the-swisscal-conference" target="_blank">Blog Post 1</a>, <a href="https://www.seamlessbayarea.org/blog/2022/2/21/a-seamless-customer-experience-and-a-cooperation-based-model-of-public-transport-summary-of-day-2-of-the-swisscal-conference" target="_blank">Blog Post 2</a>, <a href="https://www.seamlessbayarea.org/blog/2022/3/17/t9qwyb2xlez9zblfyaj79ny3azaahf" target="_blank">Blog Post 3</a>, <a href="https://www.seamlessbayarea.org/swiss-cal-virtual-conference" target="_blank">Conference Website</a>, <a href="https://west.stanford.edu/news/swiss-have-mastered-public-transit-what-might-california-learn-their-success" target="_blank">Article about the Conference</a>. </p></span>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/s1.png">
+            <div class="layer">
+              <h3>Insider's Outsider Art at the Albany Bulb</h3><br>
+              <p><span style="font-size: 20px">For my Cartography class at UC Berkeley, I traveled to the Albany Bulb and used a GPS to record all locations where I found art on the peninsula. I categorized the different artwork I encountered and use that to produce this map using ArcGIS and Adobe Illustrator. <br><br>
+                
+                See the full map <a href="files/SanaAhmed_SampleWork1.jpg" target="_blank">here</a>. </p></span>
+
+            </div>
+          </div>
+
+
+          <div class="work">
+            <img src="images/s3.png">
+            <div class="layer">
+              <h3>Curb Ramp Priority Locations</h3><br>
+              <p><span style="font-size: 20px">This is one of several maps I created using ArcGIS and Adobe Illustrator for the Mayor's Office on Disability while I was a Student Design Trainee in the Curb Ramp Program at San Francisco Public Works. <br><br>
+                
+                See the full map <a href="files/SanaAhmed_SampleWork3.pdf" target="_blank">here</a>. </p></span>
+          </div>
+          </div>
+
+          <div class="work">
+            <img src="images/s2.png">
+            <div class="layer">
+              <h3>Urban Design Studio: Hayes Valley Case Study</h3><br>
+              <p><span style="font-size: 20px">For my course, we made site visits to Hayes Valley in San Francisco. Here I capture different elements of the landscape. <br><br>
+                
+                View poster <a href="files/SanaAhmed_SampleWork2.pdf" target="_blank">here</a>. </p></span>
+            
+          </div>
+          </div>
+          <div class="work">
+            <img src="images/s4.png">
+            <div class="layer">
+              <h3>Urban Planning Studio: Highest Concentration of Latine Individuals in San Mateo County</h3><br>
+              <p><span style="font-size: 20px">For this course, I analyzed census data to determine the highest concentration of Latine individuals in San Mateo County. I created the maps by hand in Adobe Illustrator and created the layout in Adobe InDesign.<br><br>
+                
+                View poster <a href="files/SanaAhmed_SampleWork4.pdf" target="_blank">here</a>. </p></span>
+            
+          </div>
+          </div>
+          <div class="work">
+            <img src="images/s5.png">
+            <div class="layer">
+            <h3>Urban Planning Studio: Capacity Building for Mamas Unidas</h3><br>
+              <p> <span style="font-size: 20px">For this course, we worked with a group of mothers advocating on behalf of their community in San Jose, to make improvements to the built environment and enhance their quality of life. I helped outline immediate and short-term goals for their non-profit, Mamas Unidas. (Note: This was part of a larger group presentation with multiple parts.)<br><br>
+                
+                View my contributions <a href="files/SanaAhmed_SampleWork5.pdf" target="_blank">here</a>. </p></span>
+            
+          </div>
+          </div>
+
+          <div class="work">
+            <img src="images/s6.png">
+            <div class="layer">
+              <h3>Finding the Best Location for a Skatepark In San Francisco</h3><br>
+              <p><span style="font-size: 20px">For my Geographic Information Systems (GIS) course, my group and I conducted a suitability analysis to determine the best location for a new skatepark in San Francisco. I helped find and clean the data and conducted the analysis.  <br><br>
+                
+                View poster <a href="https://bit.ly/3QGwFcR" target="_blank">here</a>. </p></span>
+            
+          </div>
+          </div>
+
+          <div class="work">
+            <img src="images/bicycle access.png">
+            <div class="layer">
+              <h3>Student Research Assistant/Surveyor</h3><br>
+              <p><span style="font-size: 20px">This study explores bicycle and public transit use by low-income Latine immigrants in the San Francisco Bay Area. My contributions included helping analyze and compare household travel survey data for different municipalities across the US. Additionally, I rode Alameda County Transit bus lines within specific transit corridors to note ridership and users. I also helped identify potential survey intercept locations to reach our target demographic. Finally, I traveled to various sites throughout the Bay Area to administer both English and Spanish-language surveys. 
+                
+                <br><br>
+                
+                Acknowledgements, <a href="https://transweb.sjsu.edu/sites/default/files/1202-bicycle-and-transit-use-by-low-income-latino-immigrants.pdf" target="_blank">page four</a>. </p></span>
+            
+          </div>
+          </div>
+
+
+            </div>
+          </div>
+
+
+      </div>
+
+    </div>
+
+
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+  </body>
+</html>

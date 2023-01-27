@@ -330,10 +330,35 @@ page reports tailored to each conference co-hosting partner, summarizing finding
 
       </div>
 
-    </div>
 
 
-
+    <!-----------------Contact Form ---------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+          <h1 class="sub-title">Contact</h1>
+          <!-- <p><span style="font-size: 20px"><i class="fa-brands fa-linkedin"></i> LinkedIn</span></p> -->
+          <!-- <p><span style="font-size: 20px"><i class="fas fa-paper-plane"></i> contact@gmail.com</span></p> -->
+          <div class="linkedin">
+            <a href="https://www.linkedin.com/in/-sana-ahmed" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:ahmedsana@pm.me"><i class="fas fa-paper-plane"></i></a>
+          </div>
+          </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="text" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="7" placeholder="Your Message"></textarea>
+            <button type="submit"><span style="font-size: 18px">Submit</span></button>
+          </form>
+          <span id="msg"></span>
+        </div>
+        </div>
+        </div>
+      </div>
+   
+   <!-- scripts -->
     <script>
       var tablinks = document.getElementsByClassName("tab-links");
       var tabcontents = document.getElementsByClassName("tab-contents");
@@ -360,6 +385,25 @@ page reports tailored to each conference co-hosting partner, summarizing finding
         sidemenu.style.right = "-200px";
       }
     </script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbx5w1tBK-LmqmgnG1XwtSWV5V6HKrb3hw4aRq5XCbr5dAI0JcfuO8BSR2CeBGU2e-6vpA/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully!"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        }, 5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error. Message not sent.', error.message))
+  })
+</script>
 
   </body>
 </html>

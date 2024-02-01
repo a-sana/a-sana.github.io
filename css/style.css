@@ -141,6 +141,10 @@ nav ul li a:hover::after{
     width: 50%;
 }
 
+.bulleted-list {
+    font-size: 16px; 
+}
+
 .tab-contents ul li{
     list-style: none;
     margin: 10px 0;

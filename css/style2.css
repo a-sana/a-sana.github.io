@@ -5,7 +5,8 @@
     outline: 0;
     list-style: none;
     text-decoration: none;
-    font-family: PT Mono;
+    /* font-family: PT Mono; */
+    font-family: 'Urbanist', sans-serif;
     text-align: left;
 }
 

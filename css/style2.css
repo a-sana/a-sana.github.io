@@ -6,7 +6,9 @@
     list-style: none;
     text-decoration: none;
     /* font-family: PT Mono; */
-    font-family: 'Urbanist', sans-serif;
+    /* font-family: 'Urbanist', sans-serif; */
+    font-family: 'Karla', sans-serif;
+    font-family: 'Manrope', sans-serif;
     text-align: left;
 }
 

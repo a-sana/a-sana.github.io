@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     /* font-family: 'Nanum Pen Script', sans-serif; */
-    font-family: 'Urbanist', sans-serif;
+    /* font-family: 'Urbanist', sans-serif; */
+    font-family: 'Karla', sans-serif;
+    font-family: 'Manrope', sans-serif;
     box-sizing: border-box;
 
 }

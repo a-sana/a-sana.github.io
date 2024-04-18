@@ -207,6 +207,14 @@ nav ul li a:hover::after{
     transform: translateY(-10px);
 }
 
+.myname, .codepen {
+    color: blue;
+}
+
+.myname:hover, .codepen:hover {
+    color: purple;
+}
+
 /* --------portfolio------ */
 #portfolio{
     padding: 50px 0;
@@ -382,21 +390,8 @@ nav .fas{
 
 }
 
-.myname, .codepen {
-    color: blue;
-}
-
-.myname:hover, .codepen:hover {
-    color: purple;
-}
-
 .linkedin{
     margin-top: 20px;
-    color: blue;
-}
-
-.linkedin:hover {
-    color: purple;
 }
 
 .linkedin a{
@@ -438,11 +433,6 @@ form .btn2{
 
 #msg{
     color: #61b752;
-    margin-top: -40px;
+    margin-top: 5px;
     display: block;
 }
-
-
-
-  
-

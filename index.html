@@ -405,7 +405,7 @@ page reports tailored to each conference co-hosting partner, summarizing finding
         <div class="contact-right">
           <form name="submit-to-google-sheet">
             <input type="text" name="Name" placeholder="Your Name" required>
-            <input type="text" name="Email" placeholder="Your Email" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
             <textarea name="Message" rows="7" placeholder="Your Message"></textarea>
             <button type="submit"><span style="font-size: 18px">Submit</span></button>
           </form>
@@ -442,25 +442,35 @@ page reports tailored to each conference co-hosting partner, summarizing finding
         sidemenu.style.right = "-200px";
       }
     </script>
+  
 
 <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbx5w1tBK-LmqmgnG1XwtSWV5V6HKrb3hw4aRq5XCbr5dAI0JcfuO8BSR2CeBGU2e-6vpA/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const msg = document.getElementById("msg")
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyzJNrVEl7zDDT9bOgp_ykbpginSDqM8gDZ26I3n_II_dP2EKcoilBtYVEy25b9kzWV-w/exec';
+  const form = document.forms['submit-to-google-sheet'];
+  const msg = document.getElementById("msg");
 
   form.addEventListener('submit', e => {
-    e.preventDefault()
+    e.preventDefault();
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => {
-        msg.innerHTML = "Message sent successfully!"
-        setTimeout(function(){
-          msg.innerHTML = ""
-        }, 5000)
-        form.reset()
+        if (response.status === 200) {
+          msg.innerHTML = "Message sent successfully!";
+          setTimeout(function(){
+            msg.innerHTML = "";
+          }, 5000);
+          form.reset();
+        } else {
+          throw new Error('Network error.');
+        }
       })
-      .catch(error => console.error('Error. Message not sent.', error.message))
-  })
+      .catch(error => {
+        console.error('Error. Message not sent.', error.message);
+        msg.innerHTML = "Error. Message not sent.";
+      });
+  });
 </script>
+
+     
 
   </body>
 </html>

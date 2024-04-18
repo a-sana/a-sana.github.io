@@ -382,8 +382,21 @@ nav .fas{
 
 }
 
+.myname, .codepen {
+    color: blue;
+}
+
+.myname:hover, .codepen:hover {
+    color: purple;
+}
+
 .linkedin{
     margin-top: 20px;
+    color: blue;
+}
+
+.linkedin:hover {
+    color: purple;
 }
 
 .linkedin a{
@@ -428,6 +441,8 @@ form .btn2{
     margin-top: -40px;
     display: block;
 }
+
+
 
   
 

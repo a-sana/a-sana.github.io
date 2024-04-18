@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commute Calculator</title>
+    <link rel="stylesheet" href="css/calculatorstyle.css">
+</head>
+<body>
+    <div class="commute-calculator">
+        <div class="top">
+            <h2>Cost of Driving Calculator</h2>
+
+            <div class="entry-container">
+                <div class="group">
+                    <div class="title">Gas</div>
+                    <input type="text" name="gas[]" class="gas-amount" value="1668" />
+                </div>
+                <div class="group">
+                    <div class="title">Insurance</div>
+                    <input type="text" name="insurance[]" class="insurance-amount" value="2110" />
+                </div>
+                <div class="group">
+                    <div class="title">Maintenance & Repair</div>
+                    <input type="text" name="maintenance[]" class="maintenance-amount" value="416" />
+                </div>
+            </div>
+<!-- 
+                <form action="#">
+                    <div class="group">
+                        <div class="title">Gas</div>
+                        <input type="text" value="1668" class="loan-amount"/>
+                    </div>
+                    <div class="group">
+                        <div class="title">Insurance</div>
+                        <input type="text" value="2110" class="interest-rate"/>
+                    </div>
+
+                    <div class="group">
+                        <div class="title">Maintenance & Repair</div>
+                        <input type="text" value="416" class="loan-tenure"/>
+                    </div> -->
+                    <button>Submit</button>
+                </form>
+                </div>
+                <!-- add monthly take home pay section -->
+                <!-- add additional car expenses section -->
+                <!-- how many cars do you own section -->
+                <!-- chart should show how much of your income you are spending on your car -->
+                <!-- show CO2 emissions -->
+
+                <div class="result">
+                    <div class="left">
+                        <div class="loan-emi">
+                            <h3>Loan EMI</h3>
+                            <div class="value">123</div>
+                        </div>
+
+                        <div class="total-interest">
+                            <h3>Total Interest Payable</h3>
+                            <div class="value">1234</div>
+                        </div>
+
+                        <div class="total-amount">
+                            <h3>Total Amount</h3>
+                            <div class="value">12345</div>
+                        </div>
+
+                        <button class="calculate-btn">Calculate</button>
+                    </div>
+                    <div class="right">
+                        <canvas id="myChart" width="400" height="400"></canvas>
+                    </div>
+
+                    </div>
+
+                </div>
+        </div>
+        <script>
+        const form = document.querySelector('form');
+
+        function onCalculate(e) {
+        e.preventDefault();
+        const gasAmount = parseFloat(document.querySelector('.gas-amount').value);
+        const insuranceAmount = parseFloat(document.querySelector('.insurance-amount').value);
+        const maintenanceAmount = parseFloat(document.querySelector('.maintenance-amount').value);
+        const total = gasAmount + insuranceAmount + maintenanceAmount;
+        console.log(`Total: ${total}`);
+        }   
+
+        form.addEventListener('submit', onCalculate);
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"></script>
+
+          
+        <script src="scripts/calc.js">
+    
+
+        </script>
+    </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,421 @@
+
+<!-- https://www.w3schools.com/bootstrap/bootstrap_ref_all_classes.asp -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>My Portfolio</title>
+    
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Sacramento:400' rel='stylesheet' type='text/css'>
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+
+</head>
+<body>
+    <!-- https://hackerthemes.com/bootstrap-cheatsheet/ -->
+<!-- <nav class="navbar navbar-dark fixed-top navbar-expand-md shadow-sm"><a href="index.html" class="navbar-brand">Sana Ahmed</a> -->
+  <nav class="navbar navbar-dark fixed-top navbar-expand-md shadow-sm" id="navbar">
+
+    <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+        <div id="navbarContent" class="collapse navbar-collapse">
+
+          
+   
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a href="#welcome-section" class="nav-link">ABOUT</a></li>
+            <li class="nav-item"><a href="#Skills" class="nav-link">SKILLS</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link">COSW 20</a></li>
+            <li class="nav-item"><a href="#COSW200" class="nav-link">COSW 200</a></li>
+    
+          </ul>
+          <div class="navbar-text ml-lg-3">
+            <a href="#contact" class="btn btn-info text-white shadow">Contact</a>
+          </div>
+        </div>
+      </nav>
+    
+
+  <!-- Portfolio-->
+
+  <section id="welcome-section">
+    <div class="container">
+      <h1>ABOUT</h1>
+      <p class="text-left" id="about"><br>Hi! My name's Sana ("suh-nuh"). I received my undergraduate degree in urban planning and recently completed my Master's in computer science. I am furthering my education by learning web development at Long Beach City College. In my free time I enjoy: </p>
+
+        <div class="activity-container">
+          <span>Cycling:</span>
+          <i class="fas fa-person-biking icon-lg biking"></i>
+        </div>
+        <br>
+        <div class="activity-container">
+          <span>Running:</span>
+          <i class="fas fa-person-running icon-lg running"></i>
+        </div>
+        <br>
+        
+        <div class="activity-container">
+          <span>Hiking:</span>
+          <i class="fas fa-person-hiking icon-lg hiking"></i>
+        </div>
+        <br>
+<p>
+
+        I also enjoy cooking and baking. You can view some of my edible creations below: 
+   
+      </p>
+    
+
+        <div class="img-container">
+          <div class="panel active" style="background-image: url('images/IMG_0709.jpg')">
+          </div>
+            <div class="panel" style="background-image: url('images/IMG_5563.jpg')">
+          </div>
+          <div class="panel" style="background-image: url('images/IMG_1998.jpg')">
+          </div>
+          <div class="panel" style="background-image: url('images/IMG_3104.jpg')">
+          </div>
+          <div class="panel" style="background-image: url('images/IMG_8753.jpg')">
+          </div>
+
+          
+  
+    
+        </div>
+      
+    </div>
+  </section>
+
+
+  <section id="Skills">
+    <div class="container">
+      <h1>SKILLS</h1>
+      <div class="skills-container">
+        <div class="skills">
+            <div class="skill">Python</div>
+            <div class="skill-bar">
+              <div class="percentage" percent="80%" style="width: 80%;"></div>
+          </div>
+          <br>
+
+          <div class="skill">Java</div>
+            <div class="skill-bar">
+              <div class="percentage" percent="70%" style="width: 70%;"></div>
+          </div>
+          <br>
+
+          <div class="skill">SQL</div>
+            <div class="skill-bar">
+              <div class="percentage" percent="70%" style="width: 70%;"></div>
+          </div>
+
+          <br>
+
+
+          <div class="skill">HTML/CSS</div>
+            <div class="skill-bar">
+              <div class="percentage" percent="60%" style="width: 60%;"></div>
+          </div>
+
+          <br>
+
+          <div class="skill">JavaScript</div>
+            <div class="skill-bar">
+              <div class="percentage" percent="50%" style="width: 50%;"></div>
+          </div>
+
+          
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h1>COSW 20 PORTFOLIO</h1> <br>
+
+      <h4 class="font-weight-bold">Projects</h4> 
+
+
+      <div class="project-images">
+        
+                <!-- Web Project 1: Survey Form  -->
+                <div class="project-tile">
+                  <div class="caption">Web Project 1: Survey Form</div>
+                <a href="https://codepen.io/a-sana/pen/qBwmLEp" target="_blank">
+        <div class="project-img" style="background-image: url('images/cosw20/patma.png')"></div>
+      </a>
+    </div>
+
+                <!-- Web Project 2: Tribute Page  -->
+                <div class="project-tile">
+                  <div class="caption">Web Project 2: Tribute Page</div>
+                <a href="https://codepen.io/a-sana/pen/qBwMQwa" target="_blank">
+        <div class="project-img" style="background-image: url('images/cosw20/ibn\ battuta.png')"></div>
+      </a>
+    </div>
+
+                <!-- Web Project 3: Technical Documentation -->
+                <div class="project-tile">
+                  <div class="caption">Web Project 3: Technical Documentation</div>
+                <a href="https://codepen.io/a-sana/pen/RwOXjWG" target="_blank">
+        <div class="project-img" style="background-image: url('images/cosw20/Github.png')"></div>
+      </a>
+      </div>
+
+        <!-- Web Project 4: Product Landing Page  -->
+        <div class="project-tile">
+          <div class="caption">Web Project 4: Product Landing Page</div>
+        <a href="https://codepen.io/a-sana/pen/YzbXBve" target="_blank">
+        <div class="project-img" style="background-image: url('images/cosw20/product-landing-page.png')"></div>
+      </a>
+    </div>
+        <br>
+
+        </div>
+        <br>
+
+        <h4 class="font-weight-bold">Labs</h4>
+
+        <div class="lab-images">
+          <div class="lab-img-container">
+            <div class="caption">Bootstrap</div>
+        <a href="https://codepen.io/a-sana/pen/rNbgGMQ" target="_blank">
+        <div class="lab-img" style="background-image: url('images/cosw20/bootstrap.png')"></div>
+      </a>
+    </div>
+
+      <div class="lab-img-container">
+        <div class="caption">CSS Grid</div>
+        <a href="https://codepen.io/a-sana/pen/yLWBpxN" target="_blank">
+        <div class="lab-img" style="background-image: url('images/cosw20/css-grid.png')"></div>
+      </a>
+    </div>
+
+      <div class="lab-img-container">
+        <div class="caption">FlexBurgers (CSS Flexbox)</div>
+        <a href="https://codepen.io/a-sana/details/LYvmeEJ" target="_blank">
+        <div class="lab-img" style="background-image: url('images/cosw20/flexburger.png')"></div>
+        </a>
+      </div>
+
+        
+
+      <div class="lab-img-container">
+        <div class="caption">Basic HTML/CSS (Song Lyrics)</div>
+      <a href="https://replit.com/@a-sana/COSW-20-Lab-1" target="_blank">
+        <div class="lab-img" style="background-image: url('images/cosw20/mashrou-leila.png')"></div> 
+       </a> 
+    </div>
+
+        <!-- parallax -->
+        <div class="lab-img-container">
+          <div class="overlay">
+          <div class="caption">CSS Transitions/Animation (Parallax)</div>
+        </div>
+        <a href="https://codepen.io/a-sana/pen/rNgVrjz" target="_blank">
+        <div class="lab-img" style="background-image: url('images/cosw20/Screenshot\ 2024-05-27\ 190613.png')"></div>
+      </a>
+      </div>
+
+      <div class="lab-img-container">
+        <div class="caption">CSS Transitions/Animation (Floating Avatar)</div>
+      <a href="https://codepen.io/a-sana/pen/KKLpBXN" target="_blank">
+      <div class="lab-img" style="background-image: url('images/cosw20/floating-avatar.png')"></div>
+    </a>
+  </div>
+
+</div>
+  <br>
+
+  <h4 class="font-weight-bold">Reflection</h4> 
+
+  <p class="text-justify">
+I used elements from the CSS Transitions, Transforms and Animations lecture of the course. Specifically, I utilized transitions, which refers to the ability to change CSS properties of an element over a specific period of time. An example of this on my page 
+is the neon flickering effect on my headings (About, Skills, etc.). The text flickers in and out over a two second period. I also use this effect in my skills section. The skills bars will fill over a period of three seconds, three times. I also implemented
+the concept of CSS transforms are used to translate, rotate, scale, and skew elements, thereby allowing an element to change its shape, size, and/or position. I use transforms on my lab and project images. When a user hovers over any of these images, the image
+scale changes. Also, I apply an opacity to each of these images as part of the hover effect. Finally, I implemented keyframe animation declarations to apply animations to different elements. Namely, I use these for my activities section in my about me, the skills bars in my skills
+section, and for the pulsating neon light effect in my headers.  <br><br>
+
+Drawing inspiration from the Bootstrap lab assignment, I utilized Bootstrap, especially for the navbar and collapsed navbar menu for mobile phones and tablets. While there is still a bit of a learning curve for me with regard to wrapping my head around the different <a href="https://hackerthemes.com/bootstrap-cheatsheet/" target="_blank" id="in-text-link">Bootstrap classes</a> and what they do,
+Bootstrap offers a lot of powerful capabilities. It also eliminates a lot of guesswork and time. In my future coursework, I am really excited to delve deeper into additional libraries and frameworks that are critical to modern web development practices. 
+ 
+</p>
+<br><br>
+
+View my <a href="https://www.freecodecamp.org/a_sana" target="_blank" id="profile-link"> FreeCodeCamp profile </a> and see all the progress I have made this semester. 
+</p>
+      
+    </div>
+  </section>
+
+  <section id="COSW200">
+    <div class="container">
+      <h1>COSW 200 PORTFOLIO</h1>
+      <br>
+
+      <h4 class="font-weight-bold">JS Framework/Library Research Project</h4> 
+
+
+      <div class="project-images">
+        <a href="https://codepen.io/a-sana/pen/jORRwvb" target="_blank">
+        <div class="project-img" style="background-image: url('images/cosw200/react.js\ library.png')"></div>
+      </a>
+        <br>
+
+        </div>
+        <br>
+
+        <h4 class="font-weight-bold">Labs</h4>
+
+        <div class="lab-images">
+       
+          <!-- lab 1 -->
+
+       <div class="lab-img-container">
+        <div class="caption">Lab 1: Simple JS Programs</div>
+<a href="https://codepen.io/a-sana/pen/QWPjZdv" target="_blank" class="lab-href">
+          <div class="lab-img" style="background-image: url('images/cosw200/lab1.png')"></div>
+        </a> 
+      
+      </div>
+
+
+        <!-- lab 2 -->
+        <div class="lab-img-container">
+          <div class="caption">Lab 2: Conditionals, Loops, Comments</div>
+               <a href="https://codepen.io/a-sana/pen/ExJWovp?editors=0110" target="_blank">
+        <div class="lab-img" style="background-image: url('images/cosw200/lab2.png')"></div>
+
+      </a>
+    </div>
+
+        <!-- lab 3 -->
+        <div class="lab-img-container">
+          <div class="caption">Lab 3: Objects</div>
+        <a href="https://codepen.io/a-sana/pen/yLroRPo?editors=1010" target="_blank">
+        <div class="lab-img" style="background-image: url('images/cosw200/lab3.png')"></div>
+      </a>
+    </div>
+
+        <!-- lab 4 -->
+        <div class="lab-img-container">
+          <div class="caption">Lab 4: Document Object Model (DOM)</div>
+        <a href="https://codepen.io/a-sana/pen/KKYBWGN?editors=1010" target="_blank">
+        <div class="lab-img" style="background-image: url('images/cosw200/DOM-object.png')"></div>
+      </a>
+    </div>
+
+        <!-- lab 5 -->
+        <div class="lab-img-container">
+          <div class="caption">Lab 5: Events</div>
+       <a href="https://codepen.io/a-sana/pen/gOyBWvO?editors=1111" target="_blank">
+        <div class="lab-img" style="background-image: url('images/cosw200/fun-with-events.png')"></div>
+      </a>
+    </div>
+      <div class="lab-img-container">
+        <div class="caption">Lab 5: Events (cont.)</div>
+        <a href="https://codepen.io/a-sana/pen/GRLYEpZ?editors=1111" target="_blank">
+        <div class="lab-img" style="background-image: url('images/cosw200/events.png')"></div>
+      </a>
+    </div>
+
+        <!-- lab 6 -->
+        <div class="lab-img-container">
+          <div class="caption">Lab 6: AJAX/JSON</div>
+        <a href="https://replit.com/@a-sana/cosw200json" target="_blank">
+        <div class="lab-img" style="background-image: url('images/cosw200/maker-bus.png')"></div>
+      </a>
+    </div>
+
+            <!-- lab 7 -->
+            <div class="lab-img-container">
+              <div class="caption">Lab 7: Form Validation</div>
+            <a href="https://www.freecodecamp.org/a_sana" target="_blank">
+            <div class="lab-img" style="background-image: url('images/cosw200/learn-form-validation-calorie-counter.png')"></div>
+          </a>
+
+        </div>
+
+<!-- lab 8: dad jokes, movie database-->
+<div class="lab-img-container">
+  <div class="caption">Lab 8: Creating Apps using APIs</div>
+<a href="https://codepen.io/a-sana/pen/GRaRRwW" target="_blank">
+<div class="lab-img" style="background-image: url('images/cosw200/dad\ jokes.png')"></div>
+</a>
+</div>
+
+<div class="lab-img-container">
+  <div class="caption">Lab 8: Creating Apps using APIs (cont.)</div>
+<a href="https://codepen.io/a-sana/pen/mdYddYm" target="_blank">
+<div class="lab-img" style="background-image: url('images/cosw200/movies.png')"></div>
+</a>
+</div>
+
+        <!-- lab 9: to do, notes-->
+        <div class="lab-img-container">
+          <div class="caption">Lab 9: Simple JS Programs <br></div>
+        <a href="https://codepen.io/a-sana/pen/rNgOeEM" target="_blank">
+<div class="lab-img" style="background-image: url('images/cosw200/todos.png')"></div>
+</a>
+</div>
+
+<div class="lab-img-container">
+  <div class="caption">Lab 9: Simple JS Programs (cont.) <br></div>
+<a href="https://codepen.io/a-sana/pen/qBGONOp" target="_blank">
+<div class="lab-img" style="background-image: url('images/cosw200/notes.png')"></div>
+</a>
+
+</div>
+
+
+        
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container" id="outer-contact-container">
+    <h1 class="contact-text">Contact</h1>
+    <div class="container" id="contact-container">
+      
+      <div class="row">
+        <div class="col-md-12">          
+          <div class="contact-icons">
+            <a href="https://www.linkedin.com/in/-sana-ahmed" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:ahmedsana@pm.me"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+
+          <form name="google-sheet-form">
+            <input type="text" name="Name" class="form-control" placeholder="Your Name" required>
+          <input type="email" name="Email" class="form-control" placeholder="Your Email" required>
+          <textarea name="Message" class="form-control" rows="7" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+          </form>
+          <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+      
+    
+  <script src="script.js"></script>
+
+</body>
+</html>
+

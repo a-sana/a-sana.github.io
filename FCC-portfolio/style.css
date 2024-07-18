@@ -1,9 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Alfa+Slab+One&family=BioRhyme:wght@800&family=Concert+One&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Danfo&family=Figtree:ital,wght@0,300..900;1,300..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lilita+One&family=Lobster&family=Martian+Mono:wght@100..800&family=Modak&family=Poetsen+One&family=Quicksand:wght@300..700&family=Space+Grotesk:wght@300..700&family=Syne:wght@400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Alfa+Slab+One&family=BioRhyme:wght@800&family=Concert+One&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Danfo&family=Figtree:ital,wght@0,300..900;1,300..900&family=Honk&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lilita+One&family=Lobster&family=Martian+Mono:wght@100..800&family=Modak&family=Poetsen+One&family=Quicksand:wght@300..700&family=Space+Grotesk:wght@300..700&family=Syne:wght@400..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Alfa+Slab+One&family=BioRhyme:wght@800&family=Concert+One&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Danfo&family=Figtree:ital,wght@0,300..900;1,300..900&family=Honk&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lilita+One&family=Lobster&family=Martian+Mono:wght@100..800&family=Modak&family=Poetsen+One&family=Quicksand:wght@300..700&family=Space+Grotesk:wght@300..700&family=Syne:wght@400..800&family=Vina+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Alfa+Slab+One&family=BioRhyme:wght@800&family=Concert+One&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Danfo&family=Figtree:ital,wght@0,300..900;1,300..900&family=Honk&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lilita+One&family=Lobster&family=Martian+Mono:wght@100..800&family=Modak&family=Poetsen+One&family=Quicksand:wght@300..700&family=Space+Grotesk:wght@300..700&family=Syne:wght@400..800&family=Vina+Sans&family=Wix+Madefor+Display:wght@400..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Alfa+Slab+One&family=BioRhyme:wght@800&family=Concert+One&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Danfo&family=Figtree:ital,wght@0,300..900;1,300..900&family=Honk&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lilita+One&family=Lobster&family=Martian+Mono:wght@100..800&family=Modak&family=Poetsen+One&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Syne:wght@400..800&family=Vina+Sans&family=Wix+Madefor+Display:wght@400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Alfa+Slab+One&family=BioRhyme:wght@800&family=Concert+One&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Danfo&family=Figtree:ital,wght@0,300..900;1,300..900&family=Honk&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lilita+One&family=Lobster&family=Martian+Mono:wght@100..800&family=Modak&family=Poetsen+One&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Shrikhand&family=Space+Grotesk:wght@300..700&family=Syne:wght@400..800&family=Vina+Sans&family=Wix+Madefor+Display:wght@400..800&display=swap');
 
 :root {
     --primary: #22254b;
@@ -26,7 +23,7 @@
 
 
 .navbar-nav .nav-link {
-    font-weight: bold;
+    /* font-weight: bold; */
     color: white !important;
     font-family: 'Poppins', sans-serif;
    
@@ -45,6 +42,7 @@
 .container {
     background-color: var(--fourth-color);
     color: var(--primary);
+    margin-bottom: -75px;
 
 }
 
@@ -72,6 +70,8 @@
 p {
     color: white;
     width: 85vw;
+    /* text-align: left; */
+    text-wrap: balance;
     /* width: 76vw; */
 }
 
@@ -153,7 +153,6 @@ p {
   .project-img, .lab-img {
     width: 300px;
     height: 400px;
-    /* margin: 1rem; */
     margin-right: 40px;
     padding: 25px;
     margin-bottom: 25px;
@@ -254,18 +253,37 @@ body {
   }
 
 
+h6 {
+  text-align: center;
+  color: #fff;
+  padding-top: 50px;
+}
+
+.form-container {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+#link a{
+  color: var(--primary);
+   
+}
+
+#link a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
   /* h1 animation (neon lights) */
   h1 {
     font-family: "Honk", system-ui;
     font-size: 3rem;
-    color: #fff;
     animation: pulsate 2s ease-in-out infinite alternate;    
 }
-/* 
-.caption {
-    background-color:#22254b;
-    color: #fff;
-} */
 
 /* inspiration:
 https://css-tricks.com/how-to-create-neon-text-with-css/ */
@@ -334,8 +352,10 @@ https://css-tricks.com/how-to-create-neon-text-with-css/ */
 
 #contact-container {
     max-width: 85vw;
-    margin-left: 0;
-    margin-right: auto;
+    /* margin-left: 0;
+    margin-right: auto; */
+    margin: 0 auto;
+    padding-bottom: 50px;
 
 }
 
@@ -381,18 +401,35 @@ form .btn:active {
     color: var(--primary);
 }
 
-#msg {
+/* #msg {
     margin-top: -15px; 
-}
+} */
 
 
 @media only screen and (max-width: 600px) {
-
-  .lab-images, .project-images {
-    justify-content: center;
-    display: flex;
-
-    /* margin-left: 100px; */
+  .caption {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
+  h1 {
+    animation: none;
+    /* font-family: "Honk", system-ui; */
+    font-family: "Shrikhand", serif;
+    font-size: 3rem;
+    color: #fff;
+
+  }
+
+  .biking, .running, .hiking {
+    animation: none;
+  }
+
+  project-img,
+    .lab-img {
+        display: block; 
+        margin: 0 auto; 
+    } 
+  
 }

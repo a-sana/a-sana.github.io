@@ -1,6 +1,4 @@
 
-<!-- https://www.w3schools.com/bootstrap/bootstrap_ref_all_classes.asp -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +10,6 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
   
-  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link href='https://fonts.googleapis.com/css?family=Sacramento:400' rel='stylesheet' type='text/css'>
  
@@ -24,22 +21,20 @@
 </head>
 <body>
     <!-- https://hackerthemes.com/bootstrap-cheatsheet/ -->
-<!-- <nav class="navbar navbar-dark fixed-top navbar-expand-md shadow-sm"><a href="index.html" class="navbar-brand">Sana Ahmed</a> -->
   <nav class="navbar navbar-dark fixed-top navbar-expand-md shadow-sm" id="navbar">
 
     <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
         <div id="navbarContent" class="collapse navbar-collapse">
 
-          
-   
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a href="#welcome-section" class="nav-link">ABOUT</a></li>
+          <ul class="navbar-nav mr-auto font-weight-bold">
+            <li class="nav-item"><a href="#welcome-section" class="nav-link font-weight-bold">ABOUT</a></li>
             <li class="nav-item"><a href="#Skills" class="nav-link">SKILLS</a></li>
             <li class="nav-item"><a href="#projects" class="nav-link">COSW 20</a></li>
             <li class="nav-item"><a href="#COSW200" class="nav-link">COSW 200</a></li>
+            <li class="nav-item"><a href="#GreenTravel" class="nav-link">GREEN TRAVEL</a></li>
     
           </ul>
-          <div class="navbar-text ml-lg-3">
+          <div class="navbar-text">
             <a href="#contact" class="btn btn-info text-white shadow">Contact</a>
           </div>
         </div>
@@ -88,12 +83,12 @@
           <div class="panel" style="background-image: url('images/IMG_8753.jpg')">
           </div>
 
-          
-  
-    
         </div>
-      
+
+        
+
     </div>
+    
   </section>
 
 
@@ -134,10 +129,7 @@
               <div class="percentage" percent="50%" style="width: 50%;"></div>
           </div>
 
-          
-
-
-
+        
         </div>
       </div>
     </div>
@@ -223,9 +215,7 @@
 
         <!-- parallax -->
         <div class="lab-img-container">
-          <div class="overlay">
           <div class="caption">CSS Transitions/Animation (Parallax)</div>
-        </div>
         <a href="https://codepen.io/a-sana/pen/rNgVrjz" target="_blank">
         <div class="lab-img" style="background-image: url('images/cosw20/Screenshot\ 2024-05-27\ 190613.png')"></div>
       </a>
@@ -243,40 +233,47 @@
 
   <h4 class="font-weight-bold">Reflection</h4> 
 
-  <p class="text-justify">
-I used elements from the CSS Transitions, Transforms and Animations lecture of the course. Specifically, I utilized transitions, which refers to the ability to change CSS properties of an element over a specific period of time. An example of this on my page 
-is the neon flickering effect on my headings (About, Skills, etc.). The text flickers in and out over a two second period. I also use this effect in my skills section. The skills bars will fill over a period of three seconds, three times. I also implemented
-the concept of CSS transforms are used to translate, rotate, scale, and skew elements, thereby allowing an element to change its shape, size, and/or position. I use transforms on my lab and project images. When a user hovers over any of these images, the image
+  <!-- <p class="text-justify"> -->
+    <p class="text-left">
+I heavily utilized elements from the CSS Transitions, Transforms and Animations lecture of the course for my portfolio. CSS Transitions refer to the ability to change CSS properties of an element over a specific period of time. An example of this on my page 
+is the neon pulsating effect on my headings (About, Skills, etc.). The text pulsates over a two second period. Both my headers and my skills section use transitions. In the skills sections, the bars fill over a period of three seconds, three times. CSS transforms allow for the ability to translate, rotate, scale, and skew elements, 
+thereby allowing an element to change its shape, size, and/or position. I use transforms on my lab and project images. When a user hovers over any of these images, the image
 scale changes. Also, I apply an opacity to each of these images as part of the hover effect. Finally, I implemented keyframe animation declarations to apply animations to different elements. Namely, I use these for my activities section in my about me, the skills bars in my skills
 section, and for the pulsating neon light effect in my headers.  <br><br>
 
-Drawing inspiration from the Bootstrap lab assignment, I utilized Bootstrap, especially for the navbar and collapsed navbar menu for mobile phones and tablets. While there is still a bit of a learning curve for me with regard to wrapping my head around the different <a href="https://hackerthemes.com/bootstrap-cheatsheet/" target="_blank" id="in-text-link">Bootstrap classes</a> and what they do,
-Bootstrap offers a lot of powerful capabilities. It also eliminates a lot of guesswork and time. In my future coursework, I am really excited to delve deeper into additional libraries and frameworks that are critical to modern web development practices. 
- 
-</p>
+Drawing inspiration from the Bootstrap lab assignment (which was also my favorite lab), I utilized Bootstrap across my page, including for the collapsed navbar menu feature on my page for smaller screen sizes. While there has been a learning curve for me with regard to Bootstrap, especially around the different <a href="https://hackerthemes.com/bootstrap-cheatsheet/" target="_blank" id="in-text-link">Bootstrap classes</a> and what they do,
+I know Bootstrap offers a lot of powerful capabilities for developers. It also eliminates a lot of guesswork and time. In my future coursework, I am excited to delve into libraries and frameworks that are critical to modern web development practices. My favorite project in this course was the product landing page project because I was able to design a single-page application for a business's products that I really love.
 <br><br>
 
 View my <a href="https://www.freecodecamp.org/a_sana" target="_blank" id="profile-link"> FreeCodeCamp profile </a> and see all the progress I have made this semester. 
-</p>
-      
-    </div>
-  </section>
+</p></div>
+</section>
 
   <section id="COSW200">
     <div class="container">
       <h1>COSW 200 PORTFOLIO</h1>
       <br>
 
-      <h4 class="font-weight-bold">JS Framework/Library Research Project</h4> 
-
-
+      <h4 class="font-weight-bold">Projects/Assignments</h4>
+      
       <div class="project-images">
+        <div class="project-img-container">
+          <div class="caption">HW 1: Simple Quiz</div>
+        <a href="https://codepen.io/a-sana/pen/MWRvqRb" target="_blank">
+        <div class="project-img" style="background-image: url('images/cosw200/costofdriving.png')"></div>
+      </a>
+    </div>
+       
+
+    <div class="project-img-container">
+      <div class="caption">Library/Framework Research Project</div>
         <a href="https://codepen.io/a-sana/pen/jORRwvb" target="_blank">
         <div class="project-img" style="background-image: url('images/cosw200/react.js\ library.png')"></div>
       </a>
-        <br>
-
+      </div>
         </div>
+
+
         <br>
 
         <h4 class="font-weight-bold">Labs</h4>
@@ -385,12 +382,78 @@ View my <a href="https://www.freecodecamp.org/a_sana" target="_blank" id="profil
         
       </div>
 
+      <br>
+
+  <h4 class="font-weight-bold">Reflection</h4> 
+
+  <!-- <p class="text-justify"> -->
+    <p class="text-left">
+    In Lab 1, we created simple JavaScript programs. We utilized document.write, console.log, and alert. We also created functions and used switch statements and prompts. 
+    Expanding on this, in Homework 1, I created a simple quiz using alerts, prompts, and a switch statement to keep track of the user's quiz score. This quiz also utilized
+    document.write to list out the questions and the user's responses, as well as their overall score. In Lab 2, we created some more simple JS programs, using 
+    prompt(), confirm(), if/else statements, and loops. Lab 3 focused on creating objects and methods for the object. In this lab, we created a student object and its relevant properties, assigning values to those properties. We then created two methods for the object and used 
+    console.log to output all the properties and methods for our object. With Lab 4, we dived into learning about the Document Object Model (DOM). In this lab, we utilized the 
+    following concepts: getElementsByTagName(), querySelector/querySelectorAll(), .createElement(), .createTextNode(), .appendChild(), .getElementById(). innerHTML, childElementCount,
+    .textContent, .style.backgroundColor/.style.color, .className, .removeChild(), and .lastChild. For my framework/library research project, I researched React.js, a library 
+    for building user interfaces. 
+
+    <br><br>
+
+    For Lab 5, we covered the topic of Events, utilizing event listeners to track mouse movements (mousedown, mousemove, and click), as well as keyboard movements (keydown). This was my
+    favorite lab activity of the semester, as it is a really useful concept for webpage interactivity. I would love to delve deeper into this topic and think of different ways that I could use 
+    event listeners to make my webpages more interactive. Lab 6 focused on using AJAX/JSON to add some new content to a time table webpage. In Lab 7, we completed a FreeCodeCamp activity:
+    Learn Form Validation by Building a Calorie Counter. Lab 8 was another favorite lab of mine as we worked with APIs. We used a movie database API to populate the latest movie releases,
+    their ratings, and their descriptions. We also created a dad jokes generator, which used an event listener and fetched a joke from a database of dad jokes. Finally, in Lab 9, we created
+    a to-do list application and a notes application. 
+
+    <br><br>
+
+    
+
+    
+
     </div>
   </section>
 
+  
+<section id="GreenTravel">
+  <div class="container">
+  <h1>GREEN TRAVEL</h1><br>
+  
+  <h6 class="font-weight-bold">Choose a Clean Transportation Mode to Get Around Long Beach:</h6> 
+  <div class="form-container">
+  <form>
+    <div class="form-group">
+      <div class="form-check">
+    <input class="form-check-input" type="radio" name="mode" id="transit" value="transit">
+    <label class="form-check-label" for="transit">Transit</label>
+    </div>
+
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="mode" id="cycling" value="cycling">
+      <label class="form-check-label" for="cycling">Bicycling</label>
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="mode" id="walking" value="walking">
+        <label class="form-check-label" for="walking">Walking</label>
+        </div>
+
+        </div>
+
+    <button type="button" class="btn btn-primary" onclick="modeLink()">Submit</button>
+  </form>
+  <br>
+  <div id="link"></div>
+  <div id="pointer-icon"></div>
+</div>
+</div>
+
+</section>
+
   <section id="contact">
     <div class="container" id="outer-contact-container">
-    <h1 class="contact-text">Contact</h1>
+    <h1 class="contact-text">CONTACT</h1>
     <div class="container" id="contact-container">
       
       <div class="row">
@@ -406,13 +469,12 @@ View my <a href="https://www.freecodecamp.org/a_sana" target="_blank" id="profil
           <textarea name="Message" class="form-control" rows="7" placeholder="Your Message" required></textarea>
           <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
           </form>
-          <span id="msg"></span>
+          <div id="msg"></div>
       </div>
     </div>
   </div>
 </div>
 </section>
-      
     
   <script src="script.js"></script>
 

@@ -207,11 +207,11 @@ nav ul li a:hover::after{
     transform: translateY(-10px);
 }
 
-.myname, .codepen {
+.myname, .codepen, .portfolio-link {
     color: blue;
 }
 
-.myname:hover, .codepen:hover {
+.myname:hover, .codepen:hover, .portfolio-link:hover {
     color: purple;
 }
 
